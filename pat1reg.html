@@ -80,20 +80,20 @@ body
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form   autocomplete="on"> 
+                            <form  action="Registration.jsp" method="post" autocomplete="on"> 
                                 <h1>Patient Register</h1> 
 								
 								<p> 
                                     <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                    <input id="usernamesignup" name="txtname" required="required" type="text" placeholder="mysuperusername690" />
                                 </p>
                                 <p> 
                                     <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
-                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                    <input id="emailsignup" name="txtemail" required="required" type="email" placeholder="mysupermail@mail.com"/> 
                                 </p>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
-                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <input id="passwordsignup" name="txtpassword1" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
                                 <p> 
                                     <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
@@ -101,12 +101,33 @@ body
                                 </p>
 								<p> 
                                     <label for="agesignup_confirm" class="youage" data-icon="p">Please Enter Your  Age </label>
-                                    <input id="agesignup_confirm" name="agesignup_confirm" required="required" type="number" placeholder=" 1234567890"/>
+                                    <input id="agesignup_confirm" name="age" required="required" type="number" placeholder=" 1234567890"/>
                                 </p>
 								
-								<nav class="codrops-demos">
-								<a href="pat2reg.html">Next</a>
-								</nav>
+								<p> 
+                                    <label for="addresssignup_confirm" class="youaddress" data-icon="p">Enter Address</label>
+                                    <input id="addresssignup_confirm" name="txtaddress" required="required" type="text" placeholder=" 1234567890"/>
+                                </p>
+								<p> 
+                                    <label for="Citysignup_confirm" class="youCity" data-icon="p">Enter Your City</label>
+                                    <input id="Citysignup_confirm" name="txtcity" required="required" type="text" placeholder="eg. X8df!90EO"/>
+                                </p>
+								<p> 
+                                    <label for="Statesignup_confirm" class="youState" data-icon="p">Enter Your State</label>
+                                    <input id="Statesignup_confirm" name="txtstate" required="required" type="text" placeholder="eg. X8df!90EO"/>
+                                </p>
+								<p> 
+                                    <label for="Pincodesignup_confirm" class="youPincode" data-icon="p">Enter Your Pincode </label>
+                                    <input id="Pincodesignup_confirm" name="pincode" required="required" type="number" placeholder="eg. X8df!90EO"/>
+                                </p>
+								<p> 
+                                    <label for="mobilesignup_confirm" class="youmobile" data-icon="p">Please confirm your mobile </label>
+                                    <input id="mobilesignup_confirm" name="mobile" required="required" type="number" placeholder=" 1234567890"/>
+                                </p>
+                                
+                                 <p class="signin button"> 
+									<input type="submit" value="Sign up"/> 
+								</p>
 								
                                 <p class="change_link">  
 									Already a member ?
