@@ -72,41 +72,130 @@ body
 
 
 
-<div class="container">
+<div class="container" >
            
             
-            <section>				
+            <section >				
                 <div id="container_demo" >
-                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
                     <a class="hiddenanchor" id="toregister"></a>
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
-                        <div id="login" class="animate form">
-                            <form   autocomplete="on"> 
+                        <div id="login" class="animate form" >
+                            <form  action="dr_registration.jsp" method="post" autocomplete="on"> 
                                 <h1>Doctor Register</h1> 
-								
+								<table >
+								<tr> <td>
 								<p> 
                                     <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                    <input id="usernamesignup" name="txtname" required="required" type="text" placeholder="mysuperusername690" />
                                 </p>
+                                </td>
+                                <td>
                                 <p> 
                                     <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
-                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                    <input id="emailsignup" name="txtemail" required="required" type="email" placeholder="mysupermail@mail.com"/> 
                                 </p>
+                                </td>
+                                </tr>
+                                <tr> <td>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
-                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <input id="passwordsignup" name="txtpassword1" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
+                                </td>
+                                <td>
                                 <p> 
                                     <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
                                     <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
+                                </td>
+                                </tr>
+                                <tr> <td>
 								<p> 
-                                    <label for="mobilesignup_confirm" class="youmobile" data-icon="p">Please confirm your mobile </label>
-                                    <input id="mobilesignup_confirm" name="mobilesignup_confirm" required="required" type="number" placeholder=" 1234567890"/>
+                                    <label for="mobilesignup_confirm" class="youmobile" data-icon="p">Please enter your mobile number </label>
+                                    <input id="mobilesignup_confirm" name="mobile" required="required" type="number" placeholder=" 1234567890"/>
                                 </p>
+								</td>
+								<td>
+								<p> 
+								<label for="gendersignup" class="gendername" >Gender</label>
+                                <select name="gender">
+                                
+								<option value="male">Male </option>
+								<option value="female">Female</option>
 								
-								<nav class="codrops-demos">
+                            </select>    
+								</p>
+								</td>
+								</tr>
+								<tr> <td>
+								<p> 
+                                    <label for="Degreesignup_confirm" class="youdegree" data-icon="p">Your Degree </label>
+                                    <input id="Degreesignup_confirm" name="txt_education" required="required" type="text" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                </td>
+                                <td>
+								<p> 
+                                    <label for="worksignup_confirm" class="youwork" data-icon="p">Please Enter Your Work Experience </label>
+                                    <input id="worksignup_confirm" name="txtwork_experience" required="required" type="text" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                </td>
+                                </tr>
+                                <tr> <td>
+								<p> 
+                                    <label for="Specialitysignup_confirm" class="youSpeciality" data-icon="p">Please Enter Your Speciality </label>
+                                    <input id="Specialitysignup_confirm" name="txtspeciality" required="required" type="text" placeholder="eg. X8df!90EO"/>
+                                </p></td>
+                                <td>
+                                <p> 
+                                    <label for="addresssignup_confirm" class="youaddress" data-icon="p">Address </label>
+                                    <input id="addresssignup_confirm" name="txtaddress" required="required" type="text" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                </td>
+                                </tr>
+                                <tr> <td>
+								<p> 
+                                    <label for="Pincodesignup_confirm" class="youPincode" data-icon="p">Enter Your Pincode </label>
+                                    <input  id="Pincodesignup_confirm" name="pincode" required="required" type="number" placeholder="eg. X8df!90EO"/>
+                                
+								</p>
+								
+								</td>
+								<td>
+								<p> 
+                                    <label for="Opentimesignup_confirm" class="youOpentime" data-icon="p">Open time </label>
+                                    <input id="Opentimesignup_confirm" name="opentime" required="required" type="number" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                </td>
+                                </tr>
+                                <tr> <td>
+								<p> 
+                                    <label for="Closetimesignup_confirm" class="youClosetime" data-icon="p">Close time </label>
+                                    <input id="Closetimesignup_confirm" name="closetime" required="required" type="number" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                </td>
+                                <td>
+								<label for="rdosunday">Is sunday open ?</label>
+								<p> 
+                                    <label for="Yesnosignup_confirm" class="younoYes" data-icon="p">Yes / No </label>
+                                    <input id="Yesnosignup_confirm" name="rdosunday" required="required" type="text"  placeholder="eg. X8df!90EO"/>
+                                </p>
+                                </td>
+                                </tr>
+                                <tr> <td>
+								<p> 
+                                    <label for="fesssignup_confirm" class="youfess" data-icon="p">Fees Per Visit </label>
+                                    <input id="fesssignup_confirm" name="fees" required="required" type="number" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                </td></tr>
+                                </table>
+                                <center>
+                                <p class="signin button"> 
+									<input type="submit" value="Sign up"/> 
+								</p>
+								</center>
+								
+								<nav class="codrops-demos1">
 								<a href="doc2reg.html">Next</a>
 								</nav>
 								
@@ -122,6 +211,10 @@ body
             </section>
         </div>
 
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
