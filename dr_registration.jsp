@@ -13,11 +13,11 @@
 		
 		String uname = request.getParameter("txtname");
 		String email_id = request.getParameter("txtemail");
-		String uid1=request.getParameter("mobilenum");
-		String gender=request.getParameter("rdogender");
+		String uid1=request.getParameter("mobile");
+		String gender=request.getParameter("gender");
 		if(gender != null) 
 		  {
-            if(gender.equals("radio1"))
+            if(gender.equals("male"))
             {
                  gender="m";
             }
@@ -25,17 +25,19 @@
             {
                 gender="f";
             }
-		  }  
-		int age=Integer.parseInt(request.getParameter("txtage"));
+		  }
+		int age=32;
+		//int age=Integer.parseInt(request.getParameter("txtage"));
 		String degree=request.getParameter("txteducation");
 		String speciality=request.getParameter("txtspeciality");
 		String workexp=request.getParameter("txtwork_experience");
 		String ot=request.getParameter("opentime");
 		String ct=request.getParameter("closetime");
-		int fees=Integer.parseInt(request.getParameter(""));
-		int pincode=Integer.parseInt(request.getParameter("pincodenum"));
+		int fees=Integer.parseInt(request.getParameter("fees"));
+		String pincode=request.getParameter("pincode");
 		String sunday=request.getParameter("rdosunday");
-		StringBuffer address = new StringBuffer(request.getParameter("txtaddress"));
+		String address=request.getParameter("txtaddress");
+		//StringBuffer address=new StringBuffer(request.getParameter("txtaddress"));
   		String password=request.getParameter("txtpassword1");
         
 		Class.forName("com.mysql.jdbc.Driver");
